@@ -1,1 +1,597 @@
-[{"category":"kegiatan","price":130000,"details":{"title":"Rafting Sungai Palayangan","desc":"Rasakan sensasi arung jeram seru dengan panorama alam Pangalengan.","image":"assets/kegiatan/rafting.jpg","price1":"150000","price2":"130000","priceLabel":" / Pax","minimum":"4","duration":"3 jam","facilities":"Perahu, Pelampung, Guide","location":"Suangi Palayangan","include":"Snack, Air Mineral, Dokumentasi"}},{"category":"destinasi","price":0,"details":{"title":"Trip Situ Cileunca","desc":"Destinasi bersejarah yang menjadi andalan wisata di Pangalengan. Perpaduan antara danau buatan dengan keindahan pegunungan menjadi daya tariknya.","image":"assets/destinasi/situcileunca.jpg","price1":"15000","price2":"","priceLabel":" / Ticket","minimum":"","duration":"","facilities":"","location":"Pulosari","include":""}},{"category":"kegiatan","price":225000,"details":{"title":"ATV Pangalengan","desc":"(Single: 1 ATV untuk 1 orang)\n(Tandem: 1 ATV untuk 2 orang)","image":"assets/kegiatan/ATV.jpg","price1":"175000","price2":"225000","priceLabel":"/ ATV","minimum":"3","duration":"6 Km (90 menit)","facilities":"Safety equipments, FREE tiket Situ Cileunca","location":"Kebun Teh Warnasari, Pangalengan,","include":"Quad Bike ATV, Medical P3K Kit, Safety Equipment, Tour Guide, Rest Area, Tempat Bilas, Instruktur. "}},{"category":"kegiatan","price":0,"details":{"title":"Offroad Pangalengan","desc":"","image":"assets/kegiatan/offroad.jpg","price1":"1500000","price2":"","priceLabel":"/ Unit","minimum":"7","duration":"12 Km (150 menit)","facilities":"4x4 Landrover Offroad","location":"Gunung Padaringan, Pangalengan.","include":"Landrover Offroad, Mineral Water, Medical P3K Kit, Tour Guide, Rest Area, Tempat Bilas, Asuransi Kegiatan."}},{"category":"kegiatan","price":0,"details":{"title":"Paintball","desc":"10 vs 10 Match Team","image":"assets/kegiatan/paintball.jpg","price1":"75000","price2":"","priceLabel":"/ Orang","minimum":"20","duration":"30 menit hingga habis peluru","facilities":"Baju seragam, rompi, masker, peluru 30 butir","location":"Pinggir danau Situ Cileunca dan Hutan Pinus","include":"Instuktur, Mineral Water, Medical P3K Kit, Tour Guide, Rest Area, Asuransi Kegiatan."}},{"category":"kegiatan","price":0,"details":{"title":"Flyingfox","desc":"","image":"assets/kegiatan/flyingfox.jpg","price1":"30000","price2":"","priceLabel":" / Pax","minimum":"5","duration":"130 meter","facilities":"Harness, Helm","location":"Melintasi danau Cileunca","include":"Instruktur, P3K, Asuransi "}},{"category":"kegiatan","price":50000,"details":{"title":"Team Building","desc":"Catatan : Rp 50.000/orang (fun games only)","image":"assets/kegiatan/teambuilding.jpg","price1":"150000","price2":"50000","priceLabel":"/ Orang","minimum":"","duration":"120 menit","facilities":"Alat team-building, alat fun games","location":"Dapat disesuaikan","include":"Instruktur, P3K, Air Mineral."}},{"category":"kegiatan","price":0,"details":{"title":"Tour Perahu Danau","desc":"Maksimal 10 Orang","image":"assets/kegiatan/tour-perahu.jpg","price1":"200000","price2":"","priceLabel":"/ Tour","minimum":"5","duration":"60 menit","facilities":"Pendayung, perahu, pelampung","location":"Situ Cileunca","include":"Medical P3K Kit, Tour Guide, Rest Area, Tempat Bilas."}},{"category":"destinasi","price":0,"details":{"title":"Taman Langit","desc":"Taman Langit menjadi pilihan paling tepat bagi siapapun yang ingin menikmati pemandangan indah dari ketinggian dengan view 360 derajat.","image":"assets/destinasi/tamanlangit.jpg","price1":"10000","price2":"","priceLabel":"/ Ticket","minimum":"","duration":"","facilities":"","location":"Sukaluyu","include":""}},{"category":"destinasi","price":0,"details":{"title":"Riung Gunung","desc":"Kombinasi hamparan perkebunan teh, hutan pinus dan pegunungan yang membentang menjadi andalan destinasi satu ini. Nikmati dengan berjalan di jembatan kayu.","image":"assets/destinasi/riunggunung.jpg","price1":"10000","price2":"","priceLabel":"/ Ticket","minimum":"","duration":"","facilities":"","location":"Pulosari","include":""}},{"category":"destinasi","price":0,"details":{"title":"Nimo Highland","desc":"\nDestinasi wisata viral terbaru di Pangalengan. Memiliki pemandangan perkebunan teh Pangalengan yang dipadukan dengan nuansa Santorini.\n","image":"assets/destinasi/nimo.jpg","price1":"35000","price2":"","priceLabel":"/ Ticket","minimum":"","duration":"","facilities":"","location":"Banjarsari","include":""}},{"category":"destinasi","price":0,"details":{"title":"Teh Jangkung","desc":"Fenomena biodiversity yang menarik dan unik dari perkebunan teh satu ini hanya bisa ditemukan di Banjarsari, Pangalengan. Teh yang tumbuh tinggi menyerupai pohon","image":"assets/destinasi/tehjangkung.jpg","price1":"20000","price2":"","priceLabel":"/ Ticket","minimum":"","duration":"","facilities":"","location":"Banjarsari","include":""}},{"category":"kegiatan","price":0,"details":{"title":"Cibolang Hotspring","desc":"\nPemandian air panas pertama di Pangalengan dengan latar belakang gunung rindang yang dapat dinikmati secara langsung sambil berendam.","image":"assets/destinasi/cibolanghotspring.jpg","price1":"15000","price2":"","priceLabel":"/ Ticket","minimum":"","duration":"","facilities":"","location":"Banjarsari","include":""}},{"category":"destinasi","price":0,"details":{"title":"Penangkaran Rusa","desc":"Satu-satunya penangkaran rusa di Pangalengan yang merupakan upaya konservasi rusa bisa kamu kunjungi dan berinteraksi secara langsung.\n","image":"assets/destinasi/penangkaranrusa.jpg","price1":"15000","price2":"","priceLabel":"/ Ticket","minimum":"","duration":"","facilities":"","location":"Margamukti","include":""}},{"category":"destinasi","price":0,"details":{"title":"Carita Alam Hotspring","desc":"Pemandian air panas baru yang sedang banyak dikunjungi oleh wisatawan ketika berlibur ke Pangalengan. Pemandangan perkebunan tehnya ngga kalah menarik!\n","image":"assets/destinasi/caritaalam.jpg","price1":"25000","price2":"","priceLabel":"/ Ticket","minimum":"","duration":"","facilities":"","location":"Margamukti","include":""}},{"category":"camping","price":0,"details":{"title":"Fun Riverside","desc":"","image":"assets/camping/funriverside.jpg","price1":"375000","price2":"","priceLabel":"/ Pax","minimum":"4","duration":"2 Days, 1 Night (2D1N)","facilities":"Sarapan + Team building","location":"Tepi Sungai Palayangan","include":"Medical P3K Kit, Tour Guide, Rest Area, Tempat Bilas, Instruktur."}},{"category":"camping","price":0,"details":{"title":"Fresh Riverside","desc":"","image":"assets/camping/funriverside2.jpg","price1":"400000","price2":"","priceLabel":"/ Pax","minimum":"4","duration":"2 Days, 1 Night","facilities":"Sarapan + Rafting","location":"Tepi Sungai Palayangan","include":"Asuransi, Welcome drink, P3K, Guide & Rescue, Rest Area, Tempat Bilas, Local transport, Instruktur."}},{"category":"camping","price":0,"details":{"title":"Fresh & Fun Riverside","desc":"","image":"assets/camping/freshandfun.jpg","price1":"525000","price2":"","priceLabel":" / Pax","minimum":"4","duration":"2 Days, 1 Night","facilities":"Sarapan + Rafting + Team building","location":"Tepi Sungai Palayangan","include":"Asuransi, Welcome drink, P3K, Guide & Rescue, Rest Area, Tempat Bilas, Local transport, Instruktur."}},{"category":"camping","price":0,"details":{"title":"Fun Lakeview/Pinus","desc":"","image":"assets/camping/funlakeview.jpg","price1":"225000","price2":"","priceLabel":"/ Pax","minimum":"4","duration":"2 Days, 1 Night","facilities":"Sarapan + Team building","location":"Tepi Danau/ Hutan Pinus","include":"Medical P3K Kit, Tour Guide, Rest Area, Tempat Bilas, Instruktur."}},{"category":"camping","price":0,"details":{"title":"Fresh Lakeview/Pinus","desc":"","image":"assets/camping/freshlakeview.jpg","price1":"300000","price2":"","priceLabel":"/ Pax","minimum":"4","duration":"2 Days, 1 Night","facilities":"Sarapan + Rafting","location":" Tepi Danau/ Hutan Pinus","include":"Asuransi, Welcome drink, P3K, Guide & Rescue, Rest Area, Tempat Bilas, Local transport, Instruktur."}},{"category":"camping","price":0,"details":{"title":"Fresh & Fun Lakeview/ Pinus","desc":"","image":"assets/camping/freshandfunlake.jpg","price1":"425000","price2":"","priceLabel":"/ Pax","minimum":"","duration":"2 Days, 1 Night","facilities":"Sarapan + Rafting + Team building","location":"Tepi Danau/ Hutan Pinus","include":"Asuransi, Welcome drink, P3K, Guide & Rescue, Rest Area, Tempat Bilas, Local transport, Instruktur."}},{"category":"penginapan","price":0,"details":{"title":"Bumi Saddam Palayangan","desc":"Satu-satunya penginapan bernuansa traditional sunda di Pangalengan dengan pemandangan yang langsung dihadapkan dengan danau Situ Cileunca.\n\n","image":"assets/penginapan/palayangan.jpg","price1":"500000","price2":"","priceLabel":"/ Up-to 100 pax","minimum":"","duration":"1 Night","facilities":"","location":"Pulosari","include":""}},{"category":"penginapan","price":0,"details":{"title":"Homestay Arture BTS","desc":"Homestay modern dengan fasilitas lengkap ini sangat cocok untuk keluarga dan kelompok yang ingin berlibur di Pangalengan dengan nyaman.\n","image":"assets/penginapan/arture.jpg","price1":"2000000","price2":"","priceLabel":"/ Up-to 20 pax","minimum":"","duration":"1 Night","facilities":"","location":"Warnasari","include":""}},{"category":"penginapan","price":0,"details":{"title":"Villa Bumi Palayangan","desc":"Villa bergaya arsitektur tradisional dengan kapasitas besar ini berhadapan langsung dengan danau Situ Cileunca. Sangat cocok untuk korporasi dan keluarga!\n\n","image":"assets/penginapan/palayangan.jpg","price1":"2000000","price2":"","priceLabel":"/ Up-to 25 pax","minimum":"","duration":"1 Night","facilities":"","location":"Pulosari","include":""}},{"category":"penginapan","price":0,"details":{"title":"Villa Family 1","desc":"Villa Family ini merupakan komplek villa terdiri dari 3 homestay yang saling berdekatan satu sama lainnya dan berpemandangan Situ Cileunca.\n","image":"assets/penginapan/villa-family.jpg","price1":"2000000","price2":"","priceLabel":"/ Up-to 20 pax","minimum":"","duration":"1 Night","facilities":"","location":"Warnasari","include":""}},{"category":"penginapan","price":0,"details":{"title":"Homestay Family 2","desc":"Villa Family ini merupakan komplek villa terdiri dari 3 homestay yang saling berdekatan satu sama lainnya dan berpemandangan Situ Cileunca.\n","image":"assets/penginapan/homestay-family.jpg","price1":"2000000","price2":"","priceLabel":"Up-to 20 pax","minimum":"","duration":"1 Night","facilities":"","location":"Warnasari","include":""}},{"category":"penginapan","price":0,"details":{"title":"Homestay Family 3","desc":"","image":"assets/penginapan/homestay-family2.jpg","price1":"2500000","price2":"","priceLabel":"Up-to 20 pax","minimum":"","duration":"1 Night","facilities":"","location":"Warnasari","include":""}},{"category":"penginapan","price":0,"details":{"title":"Villa Zayd","desc":"Villa bergaya arsitektur modern ini dilengkapi dengan kamar-kamar serta fasilitas lengkap yang bisa digunakan selama menginap.\n","image":"assets/penginapan/villa-zayd.jpg","price1":"2500000","price2":"","priceLabel":"Up-to 25 pax","minimum":"","duration":"1 Night","facilities":"","location":"Warnasari","include":""}},{"category":"penginapan","price":0,"details":{"title":"Villa Wantea","desc":"Villa Wantea merupakan villa yang memadukan gaya arsitektur belanda dan modern. Kapasitas yang luas menjadikannya cocok untuk keluarga.\n\n","image":"assets/penginapan/villa-wantea.jpg","price1":"3000000","price2":"","priceLabel":"Up-to 20 pax","minimum":"","duration":"1 Night","facilities":"","location":"Warnasari","include":""}},{"category":"penginapan","price":0,"details":{"title":"Bumi Pangalengan","desc":"Villa baru satu ini merupakan komplek villa dengan gaya dan fasilitas yang modern. Cocok banget buat liburan keluarga!\n\n","image":"assets/penginapan/bumipangalengan.jpg","price1":"2000000","price2":"","priceLabel":"Up-to 36 pax","minimum":"","duration":"1 Night","facilities":"","location":"Cisurili","include":""}},{"category":"penginapan","price":0,"details":{"title":"Villa Hira","desc":"Villa satu ini memiliki ukuran yang luas sehingga bisa digunakan untuk berbagai macam aktifitas yang dilengkapi fasilitas lengkap!\n\n","image":"assets/penginapan/villahira.jpg","price1":"2500000","price2":"","priceLabel":"Up-to 25 pax","minimum":"","duration":"1 Night","facilities":"","location":"Pulosari","include":""}},{"category":"bundling","price":0,"details":{"title":"Paket A","desc":"","image":"assets/bundling/paket-a.jpg","price1":"175000","price2":"","priceLabel":"/ PAX","minimum":"10","duration":"","facilities":"Rafting + Makan","location":"Sungai Palayangan","include":""}},{"category":"bundling","price":0,"details":{"title":"Paket B","desc":"Rafting, Flying fox, Makan","image":"assets/bundling/paket-b.jpg","price1":"210000","price2":"","priceLabel":" / Pax","minimum":"10","duration":"","facilities":"","location":"Suangai Palayangan + Cileunca","include":""}},{"category":"bundling","price":0,"details":{"title":"Paket C","desc":"Rafting, Paint ball, Flying fox, Makan","image":"assets/bundling/paket-c.jpg","price1":"300000","price2":"","priceLabel":"/ Pax","minimum":"10","duration":"","facilities":"","location":"Pinggir danau Situ Cileunca dan Hutan Pinus","include":""}},{"category":"bundling","price":0,"details":{"title":"Paket D","desc":"Offroad + Rafting + Makan","image":"assets/bundling/paket-d.jpg","price1":"425000","price2":"","priceLabel":"/ Pax","minimum":"10","duration":"","facilities":"","location":"Gunung Padaringan,Sungai Palayangan","include":""}}]
+[
+  {
+    "category": "kegiatan",
+    "price": 150000,
+    "details": {
+      "title": "Rafting Sungai Palayangan",
+      "desc": "Rasakan sensasi arung jeram seru dengan panorama alam Pangalengan.",
+      "image": "assets/kegiatan/rafting.jpg",
+      "price1": "150000",
+      "price2": "",
+      "priceLabel": " / Pax",
+      "minimum": "5",
+      "duration": "3 jam",
+      "facilities": "Perahu, Pelampung, Guide",
+      "location": "Suangi Palayangan",
+      "include": "Snack, Air Mineral, Dokumentasi"
+    }
+  },
+  {
+    "category": "destinasi",
+    "price": 0,
+    "details": {
+      "title": "Trip Situ Cileunca",
+      "desc": "Destinasi bersejarah yang menjadi andalan wisata di Pangalengan. Perpaduan antara danau buatan dengan keindahan pegunungan menjadi daya tariknya.",
+      "image": "assets/destinasi/situcileunca.jpg",
+      "price1": "15000",
+      "price2": "",
+      "priceLabel": " / Ticket",
+      "minimum": "",
+      "duration": "",
+      "facilities": "",
+      "location": "Pulosari",
+      "include": ""
+    }
+  },
+  {
+    "category": "kegiatan",
+    "price": 225000,
+    "details": {
+      "title": "ATV Pangalengan",
+      "desc": "(Single: 1 ATV untuk 1 orang)\n(Tandem: 1 ATV untuk 2 orang)",
+      "image": "assets/kegiatan/ATV.jpg",
+      "price1": "185000",
+      "price2": "",
+      "priceLabel": "/ ATV",
+      "minimum": "5",
+      "duration": "6 Km (90 menit)",
+      "facilities": "Safety equipments, FREE tiket Situ Cileunca",
+      "location": "Kebun Teh Warnasari, Pangalengan,",
+      "include": "Quad Bike ATV, Medical P3K Kit, Safety Equipment, Tour Guide, Rest Area, Tempat Bilas, Instruktur. "
+    }
+  },
+  {
+    "category": "kegiatan",
+    "price": 0,
+    "details": {
+      "title": "Offroad Pangalengan",
+      "desc": "",
+      "image": "assets/kegiatan/offroad.jpg",
+      "price1": "250000",
+      "price2": "",
+      "priceLabel": "/ Unit",
+      "minimum": "7",
+      "duration": "12 Km (150 menit)",
+      "facilities": "4x4 Landrover Offroad",
+      "location": "Gunung Padaringan, Pangalengan.",
+      "include": "Landrover Offroad, Mineral Water, Medical P3K Kit, Tour Guide, Rest Area, Tempat Bilas, Asuransi Kegiatan."
+    }
+  },
+  {
+    "category": "kegiatan",
+    "price": 0,
+    "details": {
+      "title": "Paintball",
+      "desc": "10 vs 10 Match Team",
+      "image": "assets/kegiatan/paintball.jpg",
+      "price1": "85000",
+      "price2": "",
+      "priceLabel": "/ Orang",
+      "minimum": "15",
+      "duration": "30 menit hingga habis peluru",
+      "facilities": "Baju seragam, rompi, masker, peluru 30 butir",
+      "location": "Pinggir danau Situ Cileunca dan Hutan Pinus",
+      "include": "Instuktur, Mineral Water, Medical P3K Kit, Tour Guide, Rest Area, Asuransi Kegiatan."
+    }
+  },
+  {
+    "category": "kegiatan",
+    "price": 0,
+    "details": {
+      "title": "Flyingfox",
+      "desc": "",
+      "image": "assets/kegiatan/flyingfox.jpg",
+      "price1": "30000",
+      "price2": "",
+      "priceLabel": " / Pax",
+      "minimum": "5",
+      "duration": "130 meter",
+      "facilities": "Harness, Helm",
+      "location": "Melintasi danau Cileunca",
+      "include": "Instruktur, P3K, Asuransi "
+    }
+  },
+  {
+    "category": "kegiatan",
+    "price": 50000,
+    "details": {
+      "title": "Team Building",
+      "desc": "Catatan : Rp 50.000/orang (fun games only)",
+      "image": "assets/kegiatan/teambuilding.jpg",
+      "price1": "50000",
+      "price2": "",
+      "priceLabel": "/ Orang",
+      "minimum": "",
+      "duration": "120 menit",
+      "facilities": "Alat team-building, alat fun games",
+      "location": "Dapat disesuaikan",
+      "include": "Instruktur, P3K, Air Mineral."
+    }
+  },
+  {
+    "category": "kegiatan",
+    "price": 0,
+    "details": {
+      "title": "Tour Perahu Danau",
+      "desc": "Maksimal 10 Orang",
+      "image": "assets/kegiatan/tour-perahu.jpg",
+      "price1": "200000",
+      "price2": "",
+      "priceLabel": "/ Tour",
+      "minimum": "5",
+      "duration": "60 menit",
+      "facilities": "Pendayung, perahu, pelampung",
+      "location": "Situ Cileunca",
+      "include": "Medical P3K Kit, Tour Guide, Rest Area, Tempat Bilas."
+    }
+  },
+  {
+    "category": "destinasi",
+    "price": 0,
+    "details": {
+      "title": "Taman Langit",
+      "desc": "Taman Langit menjadi pilihan paling tepat bagi siapapun yang ingin menikmati pemandangan indah dari ketinggian dengan view 360 derajat.",
+      "image": "assets/destinasi/tamanlangit.jpg",
+      "price1": "10000",
+      "price2": "",
+      "priceLabel": "/ Ticket",
+      "minimum": "",
+      "duration": "",
+      "facilities": "",
+      "location": "Sukaluyu",
+      "include": ""
+    }
+  },
+  {
+    "category": "destinasi",
+    "price": 0,
+    "details": {
+      "title": "Riung Gunung",
+      "desc": "Kombinasi hamparan perkebunan teh, hutan pinus dan pegunungan yang membentang menjadi andalan destinasi satu ini. Nikmati dengan berjalan di jembatan kayu.",
+      "image": "assets/destinasi/riunggunung.jpg",
+      "price1": "10000",
+      "price2": "",
+      "priceLabel": "/ Ticket",
+      "minimum": "",
+      "duration": "",
+      "facilities": "",
+      "location": "Pulosari",
+      "include": ""
+    }
+  },
+  {
+    "category": "destinasi",
+    "price": 0,
+    "details": {
+      "title": "Nimo Highland",
+      "desc": "\nDestinasi wisata viral terbaru di Pangalengan. Memiliki pemandangan perkebunan teh Pangalengan yang dipadukan dengan nuansa Santorini.\n",
+      "image": "assets/destinasi/nimo.jpg",
+      "price1": "35000",
+      "price2": "",
+      "priceLabel": "/ Ticket",
+      "minimum": "",
+      "duration": "",
+      "facilities": "",
+      "location": "Banjarsari",
+      "include": ""
+    }
+  },
+  {
+    "category": "destinasi",
+    "price": 0,
+    "details": {
+      "title": "Teh Jangkung",
+      "desc": "Fenomena biodiversity yang menarik dan unik dari perkebunan teh satu ini hanya bisa ditemukan di Banjarsari, Pangalengan. Teh yang tumbuh tinggi menyerupai pohon",
+      "image": "assets/destinasi/tehjangkung.jpg",
+      "price1": "20000",
+      "price2": "",
+      "priceLabel": "/ Ticket",
+      "minimum": "",
+      "duration": "",
+      "facilities": "",
+      "location": "Banjarsari",
+      "include": ""
+    }
+  },
+  {
+    "category": "kegiatan",
+    "price": 0,
+    "details": {
+      "title": "Cibolang Hotspring",
+      "desc": "\nPemandian air panas pertama di Pangalengan dengan latar belakang gunung rindang yang dapat dinikmati secara langsung sambil berendam.",
+      "image": "assets/destinasi/cibolanghotspring.jpg",
+      "price1": "15000",
+      "price2": "",
+      "priceLabel": "/ Ticket",
+      "minimum": "",
+      "duration": "",
+      "facilities": "",
+      "location": "Banjarsari",
+      "include": ""
+    }
+  },
+  {
+    "category": "destinasi",
+    "price": 0,
+    "details": {
+      "title": "Penangkaran Rusa",
+      "desc": "Satu-satunya penangkaran rusa di Pangalengan yang merupakan upaya konservasi rusa bisa kamu kunjungi dan berinteraksi secara langsung.\n",
+      "image": "assets/destinasi/penangkaranrusa.jpg",
+      "price1": "15000",
+      "price2": "",
+      "priceLabel": "/ Ticket",
+      "minimum": "",
+      "duration": "",
+      "facilities": "",
+      "location": "Margamukti",
+      "include": ""
+    }
+  },
+  {
+    "category": "destinasi",
+    "price": 0,
+    "details": {
+      "title": "Carita Alam Hotspring",
+      "desc": "Pemandian air panas baru yang sedang banyak dikunjungi oleh wisatawan ketika berlibur ke Pangalengan. Pemandangan perkebunan tehnya ngga kalah menarik!\n",
+      "image": "assets/destinasi/caritaalam.jpg",
+      "price1": "25000",
+      "price2": "",
+      "priceLabel": "/ Ticket",
+      "minimum": "",
+      "duration": "",
+      "facilities": "",
+      "location": "Margamukti",
+      "include": ""
+    }
+  },
+  {
+    "category": "camping",
+    "price": 0,
+    "details": {
+      "title": "Fun Riverside",
+      "desc": "",
+      "image": "assets/camping/funriverside.jpg",
+      "price1": "375000",
+      "price2": "",
+      "priceLabel": "/ Pax",
+      "minimum": "4",
+      "duration": "2 Days, 1 Night (2D1N)",
+      "facilities": "Sarapan + Team building",
+      "location": "Tepi Sungai Palayangan",
+      "include": "Medical P3K Kit, Tour Guide, Rest Area, Tempat Bilas, Instruktur."
+    }
+  },
+  {
+    "category": "camping",
+    "price": 0,
+    "details": {
+      "title": "Fresh Riverside",
+      "desc": "",
+      "image": "assets/camping/funriverside2.jpg",
+      "price1": "400000",
+      "price2": "",
+      "priceLabel": "/ Pax",
+      "minimum": "4",
+      "duration": "2 Days, 1 Night",
+      "facilities": "Sarapan + Rafting",
+      "location": "Tepi Sungai Palayangan",
+      "include": "Asuransi, Welcome drink, P3K, Guide & Rescue, Rest Area, Tempat Bilas, Local transport, Instruktur."
+    }
+  },
+  {
+    "category": "camping",
+    "price": 0,
+    "details": {
+      "title": "Fresh & Fun Riverside",
+      "desc": "",
+      "image": "assets/camping/freshandfun.jpg",
+      "price1": "525000",
+      "price2": "",
+      "priceLabel": " / Pax",
+      "minimum": "4",
+      "duration": "2 Days, 1 Night",
+      "facilities": "Sarapan + Rafting + Team building",
+      "location": "Tepi Sungai Palayangan",
+      "include": "Asuransi, Welcome drink, P3K, Guide & Rescue, Rest Area, Tempat Bilas, Local transport, Instruktur."
+    }
+  },
+  {
+    "category": "camping",
+    "price": 0,
+    "details": {
+      "title": "Fun Lakeview/Pinus",
+      "desc": "",
+      "image": "assets/camping/funlakeview.jpg",
+      "price1": "225000",
+      "price2": "",
+      "priceLabel": "/ Pax",
+      "minimum": "4",
+      "duration": "2 Days, 1 Night",
+      "facilities": "Sarapan + Team building",
+      "location": "Tepi Danau/ Hutan Pinus",
+      "include": "Medical P3K Kit, Tour Guide, Rest Area, Tempat Bilas, Instruktur."
+    }
+  },
+  {
+    "category": "camping",
+    "price": 0,
+    "details": {
+      "title": "Fresh Lakeview/Pinus",
+      "desc": "",
+      "image": "assets/camping/freshlakeview.jpg",
+      "price1": "300000",
+      "price2": "",
+      "priceLabel": "/ Pax",
+      "minimum": "4",
+      "duration": "2 Days, 1 Night",
+      "facilities": "Sarapan + Rafting",
+      "location": " Tepi Danau/ Hutan Pinus",
+      "include": "Asuransi, Welcome drink, P3K, Guide & Rescue, Rest Area, Tempat Bilas, Local transport, Instruktur."
+    }
+  },
+  {
+    "category": "camping",
+    "price": 0,
+    "details": {
+      "title": "Fresh & Fun Lakeview/ Pinus",
+      "desc": "",
+      "image": "assets/camping/freshandfunlake.jpg",
+      "price1": "425000",
+      "price2": "",
+      "priceLabel": "/ Pax",
+      "minimum": "",
+      "duration": "2 Days, 1 Night",
+      "facilities": "Sarapan + Rafting + Team building",
+      "location": "Tepi Danau/ Hutan Pinus",
+      "include": "Asuransi, Welcome drink, P3K, Guide & Rescue, Rest Area, Tempat Bilas, Local transport, Instruktur."
+    }
+  },
+  {
+    "category": "penginapan",
+    "price": 0,
+    "details": {
+      "title": "Bumi Saddam Palayangan",
+      "desc": "Satu-satunya penginapan bernuansa traditional sunda di Pangalengan dengan pemandangan yang langsung dihadapkan dengan danau Situ Cileunca.\n\n",
+      "image": "assets/penginapan/palayangan.jpg",
+      "price1": "500000",
+      "price2": "",
+      "priceLabel": "/ Up-to 100 pax",
+      "minimum": "",
+      "duration": "1 Night",
+      "facilities": "",
+      "location": "Pulosari",
+      "include": ""
+    }
+  },
+  {
+    "category": "penginapan",
+    "price": 0,
+    "details": {
+      "title": "Homestay Arture BTS",
+      "desc": "Homestay modern dengan fasilitas lengkap ini sangat cocok untuk keluarga dan kelompok yang ingin berlibur di Pangalengan dengan nyaman.\n",
+      "image": "assets/penginapan/arture.jpg",
+      "price1": "2000000",
+      "price2": "",
+      "priceLabel": "/ Up-to 20 pax",
+      "minimum": "",
+      "duration": "1 Night",
+      "facilities": "",
+      "location": "Warnasari",
+      "include": ""
+    }
+  },
+  {
+    "category": "penginapan",
+    "price": 0,
+    "details": {
+      "title": "Villa Bumi Palayangan",
+      "desc": "Villa bergaya arsitektur tradisional dengan kapasitas besar ini berhadapan langsung dengan danau Situ Cileunca. Sangat cocok untuk korporasi dan keluarga!\n\n",
+      "image": "assets/penginapan/palayangan.jpg",
+      "price1": "2000000",
+      "price2": "",
+      "priceLabel": "/ Up-to 25 pax",
+      "minimum": "",
+      "duration": "1 Night",
+      "facilities": "",
+      "location": "Pulosari",
+      "include": ""
+    }
+  },
+  {
+    "category": "penginapan",
+    "price": 0,
+    "details": {
+      "title": "Villa Family 1",
+      "desc": "Villa Family ini merupakan komplek villa terdiri dari 3 homestay yang saling berdekatan satu sama lainnya dan berpemandangan Situ Cileunca.\n",
+      "image": "assets/penginapan/villa-family.jpg",
+      "price1": "2000000",
+      "price2": "",
+      "priceLabel": "/ Up-to 20 pax",
+      "minimum": "",
+      "duration": "1 Night",
+      "facilities": "",
+      "location": "Warnasari",
+      "include": ""
+    }
+  },
+  {
+    "category": "penginapan",
+    "price": 0,
+    "details": {
+      "title": "Homestay Family 2",
+      "desc": "Villa Family ini merupakan komplek villa terdiri dari 3 homestay yang saling berdekatan satu sama lainnya dan berpemandangan Situ Cileunca.\n",
+      "image": "assets/penginapan/homestay-family.jpg",
+      "price1": "2000000",
+      "price2": "",
+      "priceLabel": "Up-to 20 pax",
+      "minimum": "",
+      "duration": "1 Night",
+      "facilities": "",
+      "location": "Warnasari",
+      "include": ""
+    }
+  },
+  {
+    "category": "penginapan",
+    "price": 0,
+    "details": {
+      "title": "Homestay Family 3",
+      "desc": "",
+      "image": "assets/penginapan/homestay-family2.jpg",
+      "price1": "2500000",
+      "price2": "",
+      "priceLabel": "Up-to 20 pax",
+      "minimum": "",
+      "duration": "1 Night",
+      "facilities": "",
+      "location": "Warnasari",
+      "include": ""
+    }
+  },
+  {
+    "category": "penginapan",
+    "price": 0,
+    "details": {
+      "title": "Villa Zayd",
+      "desc": "Villa bergaya arsitektur modern ini dilengkapi dengan kamar-kamar serta fasilitas lengkap yang bisa digunakan selama menginap.\n",
+      "image": "assets/penginapan/villa-zayd.jpg",
+      "price1": "2500000",
+      "price2": "",
+      "priceLabel": "Up-to 25 pax",
+      "minimum": "",
+      "duration": "1 Night",
+      "facilities": "",
+      "location": "Warnasari",
+      "include": ""
+    }
+  },
+  {
+    "category": "penginapan",
+    "price": 0,
+    "details": {
+      "title": "Villa Wantea",
+      "desc": "Villa Wantea merupakan villa yang memadukan gaya arsitektur belanda dan modern. Kapasitas yang luas menjadikannya cocok untuk keluarga.\n\n",
+      "image": "assets/penginapan/villa-wantea.jpg",
+      "price1": "3000000",
+      "price2": "",
+      "priceLabel": "Up-to 20 pax",
+      "minimum": "",
+      "duration": "1 Night",
+      "facilities": "",
+      "location": "Warnasari",
+      "include": ""
+    }
+  },
+  {
+    "category": "penginapan",
+    "price": 0,
+    "details": {
+      "title": "Bumi Pangalengan",
+      "desc": "Villa baru satu ini merupakan komplek villa dengan gaya dan fasilitas yang modern. Cocok banget buat liburan keluarga!\n\n",
+      "image": "assets/penginapan/bumipangalengan.jpg",
+      "price1": "2000000",
+      "price2": "",
+      "priceLabel": "Up-to 36 pax",
+      "minimum": "",
+      "duration": "1 Night",
+      "facilities": "",
+      "location": "Cisurili",
+      "include": ""
+    }
+  },
+  {
+    "category": "penginapan",
+    "price": 0,
+    "details": {
+      "title": "Villa Hira",
+      "desc": "Villa satu ini memiliki ukuran yang luas sehingga bisa digunakan untuk berbagai macam aktifitas yang dilengkapi fasilitas lengkap!\n\n",
+      "image": "assets/penginapan/villahira.jpg",
+      "price1": "2500000",
+      "price2": "",
+      "priceLabel": "Up-to 25 pax",
+      "minimum": "",
+      "duration": "1 Night",
+      "facilities": "",
+      "location": "Pulosari",
+      "include": ""
+    }
+  },
+  {
+    "category": "bundling",
+    "price": 0,
+    "details": {
+      "title": "Paket A",
+      "desc": "",
+      "image": "assets/bundling/paket-a.jpg",
+      "price1": "175000",
+      "price2": "",
+      "priceLabel": "/ PAX",
+      "minimum": "10",
+      "duration": "",
+      "facilities": "Rafting + Makan",
+      "location": "Sungai Palayangan",
+      "include": ""
+    }
+  },
+  {
+    "category": "bundling",
+    "price": 0,
+    "details": {
+      "title": "Paket B",
+      "desc": "Rafting, Flying fox, Makan",
+      "image": "assets/bundling/paket-b.jpg",
+      "price1": "210000",
+      "price2": "",
+      "priceLabel": " / Pax",
+      "minimum": "10",
+      "duration": "",
+      "facilities": "",
+      "location": "Suangai Palayangan + Cileunca",
+      "include": ""
+    }
+  },
+  {
+    "category": "bundling",
+    "price": 0,
+    "details": {
+      "title": "Paket C",
+      "desc": "Rafting, Paint ball, Flying fox, Makan",
+      "image": "assets/bundling/paket-c.jpg",
+      "price1": "300000",
+      "price2": "",
+      "priceLabel": "/ Pax",
+      "minimum": "10",
+      "duration": "",
+      "facilities": "",
+      "location": "Pinggir danau Situ Cileunca dan Hutan Pinus",
+      "include": ""
+    }
+  },
+  {
+    "category": "bundling",
+    "price": 0,
+    "details": {
+      "title": "Paket D",
+      "desc": "Offroad + Rafting + Makan",
+      "image": "assets/bundling/paket-d.jpg",
+      "price1": "425000",
+      "price2": "",
+      "priceLabel": "/ Pax",
+      "minimum": "10",
+      "duration": "",
+      "facilities": "",
+      "location": "Gunung Padaringan,Sungai Palayangan",
+      "include": ""
+    }
+  }
+]
