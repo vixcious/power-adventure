@@ -1,0 +1,1802 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #01bbbf;
+  --text-dark: #1d293d;
+  --text-light: #62748e;
+  --extra-light: #fafafa;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Dancing Script", serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__subheader {
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-family: var(--header-font);
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.section__header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.section__description {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-light);
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  font-family: "Roboto", serif;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+img {
+  display: flex;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", serif;
+}
+
+nav {
+  position: fixed;
+  isolation: isolate;
+  width: 100%;
+  z-index: 9;
+}
+
+.nav__header {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--extra-light);
+}
+
+.nav__logo a img {
+  max-width: 100px;
+}
+
+.nav__menu__btn {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.nav__links {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--extra-light);
+  transition: transform 0.5s;
+  z-index: -1;
+}
+
+.nav__links.open {
+  transform: translateY(100%);
+}
+
+.nav__links a {
+  font-weight: 500;
+  color: var(--text-dark);
+  white-space: nowrap;
+}
+
+.nav__links a:hover {
+  color: var(--primary-color);
+}
+
+.nav__links .btn {
+  font-weight: 500;
+  color: var(--text-dark);
+  background-color: var(--extra-light);
+}
+
+.header__container {
+  display: grid;
+  gap: 2rem;
+}
+
+.header__image img {
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.header__content img {
+  max-width: 150px;
+  margin-inline: auto;
+  transform: rotate(-10deg);
+}
+
+.header__content h1 {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.header__content .booking__form {
+  margin-top: 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem 1rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header__content .input__group {
+  flex: 1;
+  display: grid;
+  gap: 0.5rem;
+  min-width: 200px; /* Lebar minimum untuk input */
+}
+
+.header__content .input__group:nth-child(3) input {
+  max-width: 100px; /* Mengurangi lebar input Jumlah Orang */
+}
+
+.header__content label {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 600; /* Label lebih tebal */
+  color: var(--primary-color); /* Warna lebih menonjol */
+}
+
+.header__content label span {
+  color: var(--primary-color);
+  font-size: 1.2rem; /* Ukuran ikon konsisten */
+}
+
+.header__content input,
+.header__content select {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: border 0.3s ease; /* Transisi halus */
+}
+
+.header__content input::placeholder,
+.header__content select::placeholder {
+  color: var(--text-dark);
+}
+
+.header__content select {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5"><path d="M0 0h10L5 5z" fill="%2301bbbf"/></svg>') no-repeat right 0.75rem center/10px 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.header__content input:hover,
+.header__content select:hover {
+  border: 1px solid var(--primary-color);
+}
+
+.header__content input[type="date"],
+.header__content input[type="number"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid var(--text-light);
+  border-radius: 0.25rem;
+}
+
+.header__content .btn {
+  font-size: 1.2rem;
+  background-color: var(--text-dark);
+}
+
+.header__content .btn#bookingButton {
+  background-color: #25D366; /* Warna hijau WhatsApp */
+}
+
+.header__content .btn#bookingButton:hover {
+  background-color: #20c058; /* Warna hijau sedikit lebih gelap saat hover */
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsiveness */
+@media (min-width: 541px) {
+  .header__content .booking__form {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 540px) {
+  .header__content .booking__form {
+    gap: 1rem; /* Kurangi jarak antar elemen di layar kecil */
+  }
+  .header__content .btn {
+    padding: 0.75rem 1.25rem; /* Tambah padding untuk tombol */
+    font-size: 1.1rem; /* Sedikit perbesar font */
+  }
+}
+
+.header__content .btn:hover {
+  background-color: var(--primary-color);
+}
+
+.about {
+  background-color: var(--extra-light);
+  overflow: hidden;
+}
+
+.about__container {
+  display: grid;
+  gap: 2rem;
+}
+
+.about__image {
+  position: relative;
+  isolation: isolate;
+  max-width: 450px;
+  margin-inline: auto;
+}
+
+.about__image img {
+  border: 0.75rem solid var(--white);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.about__image::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  transform: rotate(8deg);
+  z-index: -1;
+}
+
+.about__content .section__header {
+  margin-bottom: 1rem;
+}
+
+.about__content .section__header span {
+  color: var(--primary-color);
+}
+
+.about__signature {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(--header-font);
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.tour__grid {
+  margin-block: 2rem;
+  display: grid;
+  gap: 0 1rem;
+}
+
+.tour__card {
+  padding: 2rem 1rem;
+  transition: 0.3s;
+  border-radius: 1rem;
+}
+
+.tour__card:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.tour__card img {
+  max-width: 125px;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  border-radius: 10rem;
+}
+
+.tour__card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.tour__card p {
+  font-weight: 500;
+  color: var(--text-light);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.tour__card:hover p {
+  color: var(--primary-color);
+}
+
+.tour__btn {
+  display: flex;
+  justify-content: center;
+}
+
+/* ... Bagian sebelumnya tetap sama ... */
+
+/* Destination Section */
+.destination {
+  background-color: var(--extra-light);
+}
+
+.destination__container {
+  text-align: center;
+}
+
+.destination__grid {
+  margin-block: 4rem 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.destination__card {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.destination__card:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.destination__card__content {
+  padding: 1rem;
+  min-height: 150px; /* Menambahkan tinggi minimum untuk mencegah garis tembus pandang */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.location i {
+  margin-right: 0.5rem;
+  color: var(--primary-color);
+}
+
+.destination__card__footer {
+  margin-top: auto;
+  text-align: right;
+}
+
+.destination__card__footer h6 {
+  font-size: 0.9rem;
+  color: #718096;
+  margin-bottom: 0.25rem;
+}
+
+.destination__card__footer p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.destination__btn {
+  margin-top: 1rem;
+}
+
+@media (width > 540px) {
+  .destination__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width > 768px) {
+  .destination__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (width > 1024px) {
+  .destination__grid {
+    gap: 1.5rem;
+  }
+}
+
+/* Client Reviews Section */
+.client-reviews {
+  background-color: #f5f7fa;
+  padding: 4rem 0;
+  border-radius: 1rem;
+  margin: 2rem 0;
+}
+
+.client-reviews__container {
+  text-align: center;
+}
+
+.client-reviews__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+}
+
+.client-reviews__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.client-review-card {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  height: 100%;
+}
+
+.quote-icon {
+  font-size: 1.5rem;
+  color: #a0aec0;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.review-text {
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+}
+
+.reviewer-profile {
+  margin-right: 1rem;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviewer-details {
+  flex-grow: 1;
+}
+
+.reviewer-name {
+  font-weight: 600;
+  color: var(--text-dark);
+  display: block;
+}
+
+.reviewer-category {
+  font-size: 0.9rem;
+  color: #718096;
+  display: block;
+}
+
+.rating {
+  color: #f4c430;
+  font-size: 1rem;
+}
+
+.rating i {
+  margin-right: 0.2rem;
+}
+
+/* Responsiveness */
+@media (width <= 768px) {
+  .client-reviews__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .destination__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (width <= 1024px) and (width > 768px) {
+  .client-reviews__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .destination__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ... Bagian setelahnya tetap sama ... */
+
+.review__container {
+  display: grid;
+  gap: 2rem;
+}
+
+.review__image img {
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+.review__content {
+  overflow: hidden;
+}
+
+.swiper {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.review__card > span {
+  display: inline-block;
+  font-size: 5rem;
+  color: var(--primary-color);
+}
+
+.review__card .section__description {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.review__card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.review__card h5 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+.review__card > div {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.review__card > div > span {
+  font-size: 1rem;
+  color: goldenrod;
+}
+
+.blog {
+  background-color: var(--extra-light);
+}
+
+.blog__grid {
+  margin-block: 4rem 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.blog__card {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.blog__card:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.blog__card img {
+  border-radius: 0.5rem;
+}
+
+.blog__content {
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.blog__content h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  line-height: 1.75rem;
+}
+
+.blog__content .btn {
+  padding: 0.5rem 1rem;
+  color: var(--primary-color);
+  background-color: var(--white);
+  border: 1px solid var(--primary-color);
+}
+
+.blog__card .btn:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.blog__btn {
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  overflow: hidden;
+}
+
+.banner__wrapper {
+  width: max-content;
+  display: flex;
+  align-items: center;
+
+  animation: scroll-left 45s linear infinite;
+}
+
+.banner__wrapper img {
+  max-width: 300px;
+}
+
+@keyframes scroll-left {
+  to {
+    transform: translateX(calc(-50%));
+  }
+}
+
+.footer__logo {
+  margin-bottom: 2rem;
+}
+
+.footer__logo img {
+  max-width: 150px;
+  margin-inline: auto;
+}
+
+.footer__links {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer__links a {
+  font-weight: 500;
+  color: var(--text-dark);
+  white-space: nowrap;
+}
+
+.footer__links a:hover {
+  color: var(--primary-color);
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer__socials a {
+  font-size: 1.25rem;
+  color: var(--text-dark);
+}
+
+.footer__socials a:hover {
+  color: var(--primary-color);
+}
+
+.footer__bar {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-light);
+  text-align: center;
+}
+
+@media (width > 540px) {
+  .header__content .booking__form {
+    flex-direction: row;
+  }
+
+  .tour__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .destination__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width > 768px) {
+  nav {
+    position: static;
+    padding: 1rem;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .nav__header {
+    flex: 1;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .nav__menu__btn {
+    display: none;
+  }
+
+  .nav__links {
+    position: static;
+    width: fit-content;
+    padding: 0;
+    flex-direction: row;
+    gap: 3rem;
+    background-color: transparent;
+    transform: none !important;
+  }
+
+  .nav__links a {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid transparent;
+  }
+
+  .nav__links a:hover {
+    border-color: var(--primary-color);
+  }
+
+  .nav__links .btn {
+    color: var(--white);
+    background-color: var(--primary-color);
+  }
+
+  .header__container {
+    padding-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .header__image {
+    grid-area: 1/2/2/3;
+  }
+
+  .header__content :is(h1, .section__description) {
+    text-align: left;
+  }
+
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .about__content
+    :is(.section__header, .section__description, .about__signature) {
+    text-align: left;
+  }
+
+  .tour__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .destination__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .review__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .review__image {
+    grid-area: 1/2/2/3;
+  }
+
+  .review__content :is(.section__subheader, .section__header) {
+    text-align: left;
+  }
+
+  .review__content .section__header {
+    max-width: 400px;
+  }
+
+  .blog__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer__links {
+    gap: 3rem;
+  }
+}
+
+@media (width > 1024px) {
+  .tour__grid {
+    gap: 1.5rem;
+  }
+
+  .destination__grid {
+    gap: 1.5rem;
+  }
+
+  .blog__grid {
+    gap: 1.5rem;
+  }
+
+  .blog__content {
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* ... Bagian sebelumnya tetap sama ... */
+
+/* Client Reviews Section */
+.client-reviews {
+  background-color: #f5f7fa;
+  padding: 4rem 0;
+  border-radius: 1rem;
+  margin: 2rem 0;
+}
+
+.client-reviews__container {
+  text-align: center;
+}
+
+.client-reviews__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+}
+
+.client-reviews__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.client-review-card {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  height: 100%;
+}
+
+.quote-icon {
+  font-size: 1.5rem;
+  color: #a0aec0;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.review-text {
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.reviewer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewer-name {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.reviewer-category {
+  font-size: 0.9rem;
+  color: #718096;
+}
+
+.client-reviews__btn {
+  margin-top: 1rem;
+}
+
+.view-reviews-btn {
+  background-color: #4a90e2;
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s;
+}
+
+.view-reviews-btn:hover {
+  background-color: #357abd;
+}
+
+/* Responsiveness */
+@media (width <= 768px) {
+  .client-reviews__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (width <= 1024px) and (width > 768px) {
+  .client-reviews__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ... Bagian setelahnya tetap sama ... */
+
+/* ... Bagian sebelumnya tetap sama ... */
+
+/* Client Reviews Section */
+.client-reviews {
+  background-color: #f5f7fa;
+  padding: 4rem 0;
+  border-radius: 1rem;
+  margin: 2rem 0;
+}
+
+.client-reviews__container {
+  text-align: center;
+}
+
+.client-reviews__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+}
+
+.client-reviews__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.client-review-card {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  height: 100%;
+}
+
+.quote-icon {
+  font-size: 1.5rem;
+  color: #a0aec0;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.review-text {
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+}
+
+.reviewer-profile {
+  margin-right: 1rem;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviewer-details {
+  flex-grow: 1;
+}
+
+.reviewer-name {
+  font-weight: 600;
+  color: var(--text-dark);
+  display: block;
+}
+
+.reviewer-category {
+  font-size: 0.9rem;
+  color: #718096;
+  display: block;
+}
+
+.rating {
+  color: #f4c430;
+  font-size: 1rem;
+}
+
+.rating i {
+  margin-right: 0.2rem;
+}
+
+/* Responsiveness */
+@media (width <= 768px) {
+  .client-reviews__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (width <= 1024px) and (width > 768px) {
+  .client-reviews__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ... Bagian setelahnya tetap sama ... */
+
+/* ... Bagian sebelumnya tetap sama ... */
+
+/* Jump to Top Button */
+.jump-to-top {
+  position: fixed;
+  bottom: 120px; /* Diatas tombol WhatsApp */
+  right: 20px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 1000;
+}
+
+.jump-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.jump-to-top:hover {
+  background-color: #019a9e;
+}
+
+/* Sticky WhatsApp Button */
+.whatsapp-sticky {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: var(--white);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-sticky:hover {
+  background-color: #1ebe56;
+}
+
+/* Responsiveness */
+@media (width <= 768px) {
+  .client-reviews__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .destination__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .jump-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    bottom: 100px;
+  }
+  .whatsapp-sticky {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (width <= 1024px) and (width > 768px) {
+  .client-reviews__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .destination__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ... Bagian setelahnya tetap sama ... */
+
+/* ... Kode CSS sebelumnya dari styles.css tetap sama ... */
+
+/* ... Kode CSS sebelumnya dari styles.css tetap sama ... */
+
+/* Daftar Harga Layout */
+.daftar-harga__layout {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.daftar-harga__sidebar {
+  flex: 0 0 250px;
+  padding: 1rem;
+  background-color: var(--extra-light);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.daftar-harga__filter,
+.daftar-harga__price-filter {
+  margin-bottom: 2rem;
+}
+
+.daftar-harga__filter .filter-btn,
+.daftar-harga__price-filter select {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  background-color: var(--white);
+  border: 1px solid var(--text-light);
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.daftar-harga__price-filter select {
+  border-radius: 0.25rem;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5"><path d="M0 0h10L5 5z" fill="%2301bbbf"/></svg>') no-repeat right 0.75rem center/10px 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.daftar-harga__filter .filter-btn:hover,
+.daftar-harga__filter .filter-btn.active,
+.daftar-harga__price-filter select:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.daftar-harga__content {
+  flex: 1;
+}
+
+.daftar-harga__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.daftar-harga__card {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.daftar-harga__card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.daftar-harga__card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.daftar-harga__card__content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 200px;
+}
+
+.daftar-harga__card__content h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.daftar-harga__card__content .harga {
+  margin-top: -10px; /* naik ke atas */
+  font-weight: 600;
+  position: relative;
+  top: -5px; /* alternatif kalau margin kurang halus */
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.location i {
+  margin-right: 0.5rem;
+  color: var(--primary-color);
+}
+
+.daftar-harga__card__footer {
+  margin-top: auto;
+  text-align: right;
+}
+
+.daftar-harga__card__footer h6 {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 0.25rem;
+}
+
+.daftar-harga__card__footer p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.daftar-harga__card__footer p {
+  margin-top: -8px;
+  position: relative;
+  top: -8px;
+}
+
+
+.daftar-harga__card .booking-btn {
+  margin-top: 1rem;
+  background-color: #25D366;
+  width: 100%;
+}
+
+.daftar-harga__card .booking-btn:hover {
+  background-color: #20c058;
+}
+
+/* Responsiveness */
+@media (width <= 768px) {
+  .daftar-harga__layout {
+    flex-direction: column;
+  }
+  .daftar-harga__sidebar {
+    flex: 0 0 100%;
+    order: 1;
+  }
+  .daftar-harga__content {
+    order: 2;
+  }
+  .daftar-harga__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width > 768px) {
+  .daftar-harga__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width > 1024px) {
+  .daftar-harga__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ... Kode CSS sebelumnya dari styles.css tetap sama ... */
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.modal-desc {
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.modal-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.modal-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.modal-detail-item i {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.modal-booking {
+  background-color: #25D366;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.modal-booking:hover {
+  background-color: #20c058;
+}
+
+.modal-booking i {
+  font-size: 1.2rem;
+}
+
+/* Filter and Card Styles */
+.filter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem 0;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: #fff;
+  color: var(--text-dark);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.filter-btn.active {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.filter-btn.recommended {
+  background-color: #ffd700;
+  color: var(--text-dark);
+  font-weight: bold;
+}
+
+.filter-btn.recommended:hover {
+  background-color: #e6c200;
+}
+
+.filter-btn i {
+  font-size: 1.1rem;
+}
+
+.daftar-harga__card__content h4 i {
+  color: #ffd700;
+  font-size: 1.2rem;
+}
+
+/* Adjust card button */
+.detail-btn {
+  background-color: var(--primary-color);
+}
+
+.detail-btn:hover {
+  background-color: #019a9e;
+}
+
+/* Animasi CSS */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animasi untuk header dan deskripsi */
+.daftar-harga__container .section__subheader {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.daftar-harga__container .section__header {
+  animation: fadeIn 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.daftar-harga__container .section__description {
+  animation: fadeIn 0.8s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+/* Animasi untuk sidebar */
+.daftar-harga__sidebar {
+  animation: fadeInUp 0.8s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+/* Animasi untuk kartu */
+.daftar-harga__card {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-out forwards;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Delay untuk setiap kartu agar muncul berurutan */
+.daftar-harga__card:nth-child(1) {
+  animation-delay: 0.8s;
+}
+.daftar-harga__card:nth-child(2) {
+  animation-delay: 0.9s;
+}
+.daftar-harga__card:nth-child(3) {
+  animation-delay: 1s;
+}
+.daftar-harga__card:nth-child(4) {
+  animation-delay: 1.1s;
+}
+.daftar-harga__card:nth-child(5) {
+  animation-delay: 1.2s;
+}
+.daftar-harga__card:nth-child(6) {
+  animation-delay: 1.3s;
+}
+.daftar-harga__card:nth-child(7) {
+  animation-delay: 1.4s;
+}
+.daftar-harga__card:nth-child(8) {
+  animation-delay: 1.5s;
+}
+.daftar-harga__card:nth-child(9) {
+  animation-delay: 1.6s;
+}
+.daftar-harga__card:nth-child(10) {
+  animation-delay: 1.7s;
+}
+.daftar-harga__card:nth-child(11) {
+  animation-delay: 1.8s;
+}
+.daftar-harga__card:nth-child(12) {
+  animation-delay: 1.9s;
+}
+.daftar-harga__card:nth-child(13) {
+  animation-delay: 2s;
+}
+.daftar-harga__card:nth-child(14) {
+  animation-delay: 2.1s;
+}
+.daftar-harga__card:nth-child(15) {
+  animation-delay: 2.2s;
+}
+.daftar-harga__card:nth-child(16) {
+  animation-delay: 2.3s;
+}
+.daftar-harga__card:nth-child(17) {
+  animation-delay: 2.4s;
+}
+.daftar-harga__card:nth-child(18) {
+  animation-delay: 2.5s;
+}
+.daftar-harga__card:nth-child(19) {
+  animation-delay: 2.6s;
+}
+.daftar-harga__card:nth-child(20) {
+  animation-delay: 2.7s;
+}
+.daftar-harga__card:nth-child(21) {
+  animation-delay: 2.8s;
+}
+.daftar-harga__card:nth-child(22) {
+  animation-delay: 2.9s;
+}
+.daftar-harga__card:nth-child(23) {
+  animation-delay: 3s;
+}
+.daftar-harga__card:nth-child(24) {
+  animation-delay: 3.1s;
+}
+.daftar-harga__card:nth-child(25) {
+  animation-delay: 3.2s;
+}
+.daftar-harga__card:nth-child(26) {
+  animation-delay: 3.3s;
+}
+.daftar-harga__card:nth-child(27) {
+  animation-delay: 3.4s;
+}
+.daftar-harga__card:nth-child(28) {
+  animation-delay: 3.5s;
+}
+.daftar-harga__card:nth-child(29) {
+  animation-delay: 3.6s;
+}
+.daftar-harga__card:nth-child(30) {
+  animation-delay: 3.7s;
+}
+.daftar-harga__card:nth-child(31) {
+  animation-delay: 3.8s;
+}
+.daftar-harga__card:nth-child(32) {
+  animation-delay: 3.9s;
+}
+.daftar-harga__card:nth-child(33) {
+  animation-delay: 4s;
+}
+.daftar-harga__card:nth-child(34) {
+  animation-delay: 4.1s;
+}
+.daftar-harga__card:nth-child(35) {
+  animation-delay: 4.2s;
+}
+
+/* Transisi saat filter berubah */
+.daftar-harga__card[style*="display: block"] {
+  opacity: 1;
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.daftar-harga__card[style*="display: none"] {
+  opacity: 0;
+}
+
+    .team__grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .team__card {
+      text-align: center;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .team__card img {
+      max-width: 150px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .team__card h4 {
+      margin: 0.5rem 0 0.25rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+    .team__card p {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text-light);
+    }
+    @media (width <= 768px) {
+      .team__grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (width <= 1024px) and (width > 768px) {
+      .team__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Existing styles.css content (not shown for brevity) */
+
+    /* ... CSS yang sudah ada ... */
+
+/* Styling untuk ikon di tombol filter */
+.daftar-harga__filter .filter-btn i {
+  margin-right: 8px; /* Jarak antara ikon dan teks */
+  font-size: 1.1em;  /* Sesuaikan ukuran ikon jika perlu */
+  vertical-align: middle; /* Menyelaraskan ikon dengan teks */
+}
+
+/* Styling untuk tombol filter agar ikon dan teks sejajar */
+.daftar-harga__filter .filter-btn {
+  display: flex; /* Menggunakan flexbox untuk alignment */
+  align-items: center; /* Menyelaraskan item secara vertikal */
+  justify-content: flex-start; /* Memulai item dari kiri */
+  text-align: left; /* Pastikan teks rata kiri */
+  padding-left: 15px; /* Tambahkan padding kiri agar tidak terlalu mepet */
+}
+
+/* Styling untuk input pencarian baru */
+.daftar-harga__search-filter {
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.65rem 1rem; /* Penyesuaian padding agar konsisten */
+  font-size: 0.95rem; /* Penyesuaian ukuran font */
+  font-weight: 500;
+  color: var(--text-dark);
+  background-color: var(--white);
+  border: 1px solid var(--text-light);
+  border-radius: 0.25rem; /* Bentuk kotak agar seragam dengan price range */
+  box-sizing: border-box; /* Pastikan padding dan border termasuk dalam width */
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(1, 187, 191, 0.25); /* Efek shadow saat fokus, sesuaikan warna dengan --primary-color */
+}
+
+.search-input::placeholder {
+  color: var(--text-light);
+}
+
+/* Penyesuaian untuk judul filter agar konsisten */
+.daftar-harga__sidebar .filter__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}

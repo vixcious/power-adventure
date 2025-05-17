@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daftar Harga - Power Adventure</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+  <nav>
+    <div class="nav__header">
+      <div class="nav__logo">
+        <a href="#"><img src="assets/logo.png" alt="logo" /></a>
+      </div>
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="daftar-harga.html">Daftar Harga</a></li>
+      <li><a href="#">Galeri</a></li>
+      <li><a href="#">Artikel</a></li>
+      <li><a href="#">Tentang Kami</a></li>
+    </ul>
+  </nav>
+
+  <header class="section__container daftar-harga__container">
+    <h4 class="section__subheader">Harga</h4>
+    <h2 class="section__header">Daftar Harga Paket Wisata</h2>
+    <div class="daftar-harga__layout">
+      <div class="daftar-harga__sidebar">
+        <div class="daftar-harga__filter">
+          <h5 class="filter__title">Filter Paket</h5>
+          <button class="filter-btn active" data-filter="all"><i class="ri-checkbox-circle-fill"></i> Semua</button>
+          <button class="filter-btn" data-filter="kegiatan"><i class="ri-run-line"></i> Kegiatan</button>
+          <button class="filter-btn" data-filter="destinasi"><i class="ri-map-pin-line"></i> Destinasi</button>
+          <button class="filter-btn" data-filter="penginapan"><i class="ri-hotel-line"></i> Penginapan</button>
+          <button class="filter-btn" data-filter="camping"><i class="ri-tent-line"></i> Camping</button>
+          <button class="filter-btn" data-filter="bundling"><i class="ri-price-tag-3-line"></i> Bundling</button>
+        </div>
+        <div class="daftar-harga__price-filter">
+          <h5 class="filter__title">Rentang Harga</h5>
+          <select name="price-range">
+            <option value="all">Semua Harga</option>
+            <option value="0-500000">Rp 0 - Rp 500.000</option>
+            <option value="500001-1000000">Rp 500.001 - Rp 1.000.000</option>
+            <option value="1000001-2000000">Rp 1.000.001 - Rp 2.000.000</option>
+            <option value=">2000000">> Rp 2.000.000</option>
+          </select>
+        </div>
+        <div class="daftar-harga__search-filter">
+          <h5 class="filter__title">Cari Paket</h5>
+          <input type="text" class="search-input" placeholder="Masukkan nama paket..." />
+        </div>
+      </div>
+      <div class="daftar-harga__content">
+        <div class="daftar-harga__grid"></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="modal" id="packageModal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div class="modal-image"></div>
+      <h3 class="modal-title"></h3>
+      <p class="modal-desc"></p>
+      <div class="modal-details">
+        <div class="modal-detail-item">
+          <i class="ri-money-dollar-circle-line"></i>
+          <span class="modal-price1"></span>
+        </div>
+        <div class="modal-detail-item">
+          <i class="ri-money-dollar-circle-line"></i>
+          <span class="modal-price2"></span>
+        </div>
+        <div class="modal-detail-item">
+          <i class="ri-group-line"></i>
+          <span class="modal-minimum">Minimum: Orang</span>
+        </div>
+        <div class="modal-detail-item">
+          <i class="ri-time-line"></i>
+          <span class="modal-duration">Durasi: </span>
+        </div>
+        <div class="modal-detail-item">
+          <i class="ri-service-line"></i>
+          <span class="modal-facilities">Fasilitas: </span>
+        </div>
+        <div class="modal-detail-item">
+          <i class="ri-checkbox-circle-line"></i>
+          <span class="modal-include">Include: </span>
+        </div>
+      </div>
+      <button class="btn modal-booking booking-btn"><i class="ri-whatsapp-line"></i> Booking Sekarang</button>
+    </div>
+  </div>
+
+  <footer class="section__container footer__container">
+    <div class="footer__logo">
+      <img src="assets/logo.png" alt="logo" />
+    </div>
+    <ul class="footer__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Galeri</a></li>
+      <li><a href="#">Tentang Kami</a></li>
+    </ul>
+    <div class="footer__socials">
+      <a href="#"><i class="ri-facebook-fill"></i></a>
+      <a href="#"><i class="ri-instagram-line"></i></a>
+      <a href="#"><i class="ri-youtube-fill"></i></a>
+      <a href="#"><i class="ri-whatsapp-line"></i></a>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2025 Power Adventure. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

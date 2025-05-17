@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri - Power Adventure</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css">
+  <style>
+    .galeri__container {
+      padding: 5rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+    .filter__buttons {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .filter__buttons button {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5rem;
+      background-color: var(--primary-color);
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .filter__buttons button.active,
+    .filter__buttons button:hover {
+      background-color: var(--text-dark);
+    }
+    .galeri__grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      margin-top: 2rem;
+    }
+    .galeri__grid img {
+      border-radius: 0.5rem;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+    .galeri__grid img:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav__header">
+      <div class="nav__logo">
+        <a href="index.html"><img src="assets/logo.png" alt="Logo Power Adventure" /></a>
+      </div>
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="ri-menu-3-line"></i>
+      </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="daftar-harga.html">Daftar Harga</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="blog.html">Artikel</a></li>
+        <li><a href="about.html">Tentang Kami</a></li>
+    </ul>
+  </nav>
+
+  <section class="galeri__container">
+    <h2 class="section__subheader">Galeri</h2>
+    <h1 class="section__header">Momen Seru Bersama Power Adventure</h1>
+
+    <div class="filter__buttons">
+      <button class="filter-btn active" data-filter="all">Semua</button>
+      <button class="filter-btn" data-filter="offroad">Offroad</button>
+      <button class="filter-btn" data-filter="rafting">Rafting</button>
+      <button class="filter-btn" data-filter="flyingfox">Flying Fox</button>
+      <button class="filter-btn" data-filter="teambuilding">Team Building</button>
+      <button class="filter-btn" data-filter="atv">ATV</button>
+      <button class="filter-btn" data-filter="paintball">Paint Ball</button>
+    </div>
+
+    <div class="galeri__grid" id="galeriGrid"></div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryGrid = document.getElementById('galeriGrid');
+
+    async function loadGallery() {
+      const res = await fetch('data-galeri.json');
+      const data = await res.json();
+      galleryGrid.innerHTML = '';
+
+      data.forEach(item => {
+        const link = document.createElement('a');
+        link.href = item.src;
+        link.setAttribute('data-lightbox', 'galeri');
+        link.setAttribute('data-title', item.kategori);
+        link.setAttribute('data-category', item.kategori);
+
+        const img = document.createElement('img');
+        img.src = item.src;
+        img.alt = item.kategori;
+
+        link.appendChild(img);
+        galleryGrid.appendChild(link);
+      });
+    }
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+
+        document.querySelectorAll('#galeriGrid a').forEach(item => {
+          const category = item.dataset.category;
+          item.style.display = (filter === 'all' || category === filter) ? 'block' : 'none';
+        });
+      });
+    });
+
+    loadGallery();
+    
+  </script>
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__logo">
+          <img src="assets/logo.png" alt="logo" />
+        </div>
+        <ul class="footer__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="daftar-harga.html">Daftar Harga</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="blog.html">Artikel</a></li>
+        <li><a href="about.html">Tentang Kami</a></li>
+        </ul>
+        <ul class="footer__socials">
+          <li>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 Power Adventure. All rights reserved.
+      </div>
+    </footer>
+
+        <!-- Tombol Jump to Top -->
+    <button class="jump-to-top" id="jumpToTop">
+      <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!-- Tombol Sticky WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=6281234567890&text=Halo,%20saya%20tertarik%20dengan%20paket%20Power%20Adventure!" class="whatsapp-sticky" target="_blank">
+      <i class="ri-whatsapp-line"></i>
+    </a>
+  <script src="main.js"></script>
+</body>
+</html>

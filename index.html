@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Power Adventure - Outbond, Camping dan Penginapan</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">
+            <img src="assets/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="daftar-harga.html">Daftar Harga</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="blog.html">Artikel</a></li>
+        <li><a href="about.html">Tentang Kami</a></li>
+        <li>
+          <button class="btn">
+            Rencanakan Liburan
+            <span><i class="ri-arrow-right-long-line"></i></span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="assets/header.png" alt="header" />
+      </div>
+      <div class="header__content">
+        <img src="assets/map.png" alt="map" />
+        <h1>Unlock Your Adventure with Power Adventure!</h1>
+        <p class="section__description">
+          Power Adventure adalah tim profesional yang menghadirkan pengalaman seru
+          seperti rafting, paintball, flying fox, dan akomodasi nyaman.
+          Cocok untuk kegiatan team building maupun liburan pribadi,
+          kami siap mewujudkan petualangan outdoor impian Anda. 
+        </p>
+        <div class="booking__form">
+          <div class="input__group">
+            <label for="paket">
+              <span><i class="ri-suitcase-line"></i></span> Pilih Paket
+            </label>
+            <select id="paket" name="paket">
+              <option value="Rafting">Rafting</option>
+              <option value="Paintball">Paintball</option>
+              <option value="Flying Fox">Flying Fox</option>
+              <option value="Accommodation">Accommodation</option>
+            </select>
+          </div>
+          <div class="input__group">
+            <label for="tanggal_booking">
+              <span><i class="ri-calendar-line"></i></span> Tanggal
+            </label>
+            <input
+              type="date"
+              id="tanggal_booking"
+              name="tanggal_booking"
+            />
+          </div>
+          <div class="input__group">
+            <label for="jumlah_orang">
+              <span><i class="ri-user-line"></i></span> Jumlah Orang
+            </label>
+            <input
+              type="number"
+              id="jumlah_orang"
+              name="jumlah_orang"
+              placeholder="1"
+              min="1"
+            />
+          </div>
+          <button class="btn" id="bookingButton">
+            Booking Now
+            <span><i class="ri-whatsapp-line"></i></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="destination" id="destination">
+      <div class="section__container destination__container">
+        <h3 class="section__subheader">Kegiatan seru</h3>
+        <h2 class="section__header">Pengalaman Seru Yang Wajib di Coba</h2>
+        <div class="destination__grid">
+          <div class="destination__card">
+            <img src="assets/kegiatan/rafting.jpg" alt="destination" />
+            <div class="destination__card__content">
+              <h4>Rafting/Arung Jeram</h4>
+              <div class="location">
+                <i class="ri-map-pin-line"></i>
+                <h5>Sungai Palayangan</h5>
+              </div>
+              <div class="destination__card__footer">
+                <h6>1 PAX Hanya</h6>
+                <p>Rp. 150.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="destination__card">
+            <img src="assets/kegiatan/ATV.jpg" alt="destination" />
+            <div class="destination__card__content">
+              <h4>ATV Pangalengan</h4>
+              <div class="location">
+                <i class="ri-map-pin-line"></i>
+                <h5>Kawah Teh Warnasari</h5>
+              </div>
+              <div class="destination__card__footer">
+                <h6>1 Unit Hanya</h6>
+                <p>Rp. 175.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="destination__card">
+            <img src="assets/kegiatan/offroad.jpg" alt="tour" />
+            <div class="destination__card__content">
+              <h4>Offroad Pangalengan</h4>
+              <div class="location">
+                <i class="ri-map-pin-line"></i>
+                <h5>Gunung Padaringan</h5>
+              </div>
+              <div class="destination__card__footer">
+                <h6>1 Unit Hanya</h6>
+                <p>Rp. 1.500.000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="destination__btn">
+          <a href="daftar-harga.html" class="btn">
+            Kegiatan Lainnya
+            <span><i class="ri-arrow-right-long-line"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="destination">
+      <div class="section__container destination__container">
+        <h3 class="section__subheader">Penginapan</h3>
+        <h2 class="section__header">Cottage, Hotel dan Villa</h2>
+        <div class="destination__grid">
+          <div class="destination__card">
+            <img src="assets/penginapan/palayangan.jpg" alt="destination" />
+            <div class="destination__card__content">
+              <h4>Bumi Saddam Palayangan</h4>
+              <div class="location">
+                <i class="ri-map-pin-line"></i>
+                <h5>Pulosari</h5>
+              </div>
+              <div class="destination__card__footer">
+                <h6>Start From</h6>
+                <p>Rp. 500.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="destination__card">
+            <img src="assets/penginapan/arture.jpg" alt="destination" />
+            <div class="destination__card__content">
+              <h4>Homestay Arture BTS</h4>
+              <div class="location">
+                <i class="ri-map-pin-line"></i>
+                <h5>Warnasari</h5>
+              </div>
+              <div class="destination__card__footer">
+                <h6>Start From</h6>
+                <p>Rp. 2.000.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="destination__card">
+            <img src="assets/penginapan/villa-bumi.jpg" alt="tour" />
+            <div class="destination__card__content">
+              <h4>Villa Bumi Palayangan</h4>
+              <div class="location">
+                <i class="ri-map-pin-line"></i>
+                <h5>Pulosari</h5>
+              </div>
+              <div class="destination__card__footer">
+                <h6>Start From</h6>
+                <p>Rp. 2.000.000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="destination__btn">
+          <a href="daftar-harga.html" class="btn">
+            Penginapan Lainnya
+            <span><i class="ri-arrow-right-long-line"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="destination">
+      <div class="section__container destination__container">
+        <h3 class="section__subheader">Camping</h3>
+        <h2 class="section__header">Camping Riverside</h2>
+        <div class="destination__grid">
+          <div class="destination__card">
+            <img src="assets/camping/freshriverside.jpg" alt="cottage" />
+            <div class="destination__card__content">
+              <h4>Fresh Camp - River Side</h4>
+              <div class="location">
+                <i class="ri-map-pin-line"></i>
+                <h5>Rahong River</h5>
+              </div>
+              <div class="destination__card__footer">
+                <h6>Start From</h6>
+                <p>Rp. 400.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="destination__card">
+            <img src="assets/camping/funlakeview.jpg" alt="cottage" />
+            <div class="destination__card__content">
+              <h4>Fresh Camp – Lake view</h4>
+              <div class="location">
+                <i class="ri-map-pin-line"></i>
+                <h5>Warnasari</h5>
+              </div>
+              <div class="destination__card__footer">
+                <h6>Start From</h6>
+                <p>Rp. 300.000</p>
+              </div>
+            </div>
+          </div>
+          <div class="destination__card">
+            <img src="assets/camping/freshlakeview.jpg" alt="hotel" />
+            <div class="destination__card__content">
+              <h4>Fresh & Fun – Lake view</h4>
+              <div class="location">
+                <i class="ri-map-pin-line"></i>
+                <h5>Pulosari</h5>
+              </div>
+              <div class="destination__card__footer">
+                <h6>Start From</h6>
+                <p>Rp. 425.000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="destination__btn">
+          <a href="daftar-harga.html" class="btn">
+            Camping Lainnya
+            <span><i class="ri-arrow-right-long-line"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="client-reviews">
+      <div class="section__container client-reviews__container">
+        <h2 class="client-reviews__title">Testimonial</h2>
+        <div class="client-reviews__grid">
+          <div class="client-review-card">
+            <span class="quote-icon">"</span>
+            <p class="review-text">
+              2kali kesini gk bosen, recommended banget, amang2 guide nya ramah pisan, friendly. 
+              Keren  banget pemandangan Arum jeram nya
+            </p>
+            <div class="reviewer-info">
+              <div class="reviewer-profile">
+                <img src="assets/profile-1.jpg" alt="Profile" class="profile-pic" />
+              </div>
+              <div class="reviewer-details">
+                <span class="reviewer-name">- Hasan Din</span>
+                <span class="reviewer-category">Bogor</span>
+                <div class="rating">
+                  <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="client-review-card">
+            <span class="quote-icon">"</span>
+            <p class="review-text">
+              Baru pertama kali nyoba in rafting .. seru banget .. 
+              next bakalan ngajak tmn/keluarga lagi kesiniii .. 🤩🤩🔥🔥
+            </p>
+            <div class="reviewer-info">
+              <div class="reviewer-profile">
+                <img src="assets/profile-2.jpg" alt="Profile" class="profile-pic" />
+              </div>
+              <div class="reviewer-details">
+                <span class="reviewer-name">- Rizki Oktaviansyah</span>
+                <span class="reviewer-category">Medan</span>
+                <div class="rating">
+                  <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-line"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="client-review-card">
+            <span class="quote-icon">"</span>
+            <p class="review-text">
+              Jangan nyesel kalo kesini, tracknya mencekam view nya bagus, 
+              guide nya juga asik" dan seru", makasih buat pengalaman nyaaaa 🫡😎
+            </p>
+            <div class="reviewer-info">
+              <div class="reviewer-profile">
+                <img src="assets/profile-3.jpg" alt="Profile" class="profile-pic" />
+              </div>
+              <div class="reviewer-details">
+                <span class="reviewer-name">- Fernando Rio</span>
+                <span class="reviewer-category">Bandung</span>
+                <div class="rating">
+                  <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-half-fill"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Blog Section -->
+<section class="blog">
+  <div class="section__container blog__container">
+    <h3 class="section__subheader">Blog</h3>
+    <h2 class="section__header">Artikel dan Tips Menarik</h2>
+    <div class="blog__grid">
+      <div class="blog__card">
+        <img src="assets/blog/gathering-kantor-outdoor-1747389718.jpg" alt="team building" />
+        <div class="blog__content">
+          <h4>Gathering Kantor Lebih Seru dengan Paket Team Building Outdoor</h4>
+          <a href="detail.html?slug=gathering-kantor-outdoor" class="btn">Selengkapnya</a>
+          </a>
+        </div>
+      </div>
+      <div class="blog__card">
+        <img src="assets/blog/flying-fox-pangalengan-1747389223.jpg" alt="flying fox" />
+        <div class="blog__content">
+          <h4>Flying Fox di Tengah Alam: Uji Nyali Sekaligus Healing</h4>
+          <a href="detail.html?slug=flying-fox-pangalengan" class="btn">Selengkapnya</a>
+          </a>
+        </div>
+      </div>
+      <div class="blog__card">
+        <img src="assets/blog/camping-situ-cileunca-1747388891.jpg" alt="camping" />
+        <div class="blog__content">
+          <h4>Camping di Pinggir Danau: Pengalaman yang Bikin Rindu Pulang</h4>
+          <a href="detail.html?slug=camping-situ-cileunca" class="btn">Selengkapnya</a>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="blog__btn">
+      <a href="blog.html" class="btn">
+        Artikel Lainnya
+        <span><i class="ri-arrow-right-long-line"></i></span>
+      </a>
+    </div>
+  </div>
+</section>
+    <!-- End Blog Section -->
+
+    <section class="banner">
+      <div class="banner__wrapper">
+        <img src="assets/banner-1.jpg" alt="banner" />
+        <img src="assets/banner-2.jpg" alt="banner" />
+        <img src="assets/banner-3.jpg" alt="banner" />
+        <img src="assets/banner-4.jpg" alt="banner" />
+        <img src="assets/banner-5.jpg" alt="banner" />
+        <img src="assets/banner-6.jpg" alt="banner" />
+        <img src="assets/banner-7.jpg" alt="banner" />
+        <img src="assets/banner-8.jpg" alt="banner" />
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__logo">
+          <img src="assets/logo.png" alt="logo" />
+        </div>
+        <ul class="footer__links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="daftar-harga.html">Daftar Harga</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="blog.html">Artikel</a></li>
+        <li><a href="about.html">Tentang Kami</a></li>
+        </ul>
+        <ul class="footer__socials">
+          <li>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 Power Adventure. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Tombol Jump to Top -->
+    <button class="jump-to-top" id="jumpToTop">
+      <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!-- Tombol Sticky WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=6281234567890&text=Halo,%20saya%20tertarik%20dengan%20paket%20Power%20Adventure!" class="whatsapp-sticky" target="_blank">
+      <i class="ri-whatsapp-line"></i>
+    </a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93d6cd365b1cb038',t:'MTc0Njg1MjQ3OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+  </body>
+</html>

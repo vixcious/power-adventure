@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog - Power Adventure</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav__header">
+      <div class="nav__logo">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="logo" />
+        </a>
+      </div>
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="ri-menu-3-line"></i>
+      </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="daftar-harga.html">Daftar Harga</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="blog.html">Artikel</a></li>
+        <li><a href="about.html">Tentang Kami</a></li>
+    </ul>
+  </nav>
+
+  <section class="section__container blog__container">
+    <h3 class="section__subheader">Blog</h3>
+    <h2 class="section__header">Artikel & Tips Seru</h2>
+    <div class="blog__grid" id="blogGrid"></div>
+  </section>
+
+  <footer id="contact">
+    <div class="section__container footer__container">
+      <div class="footer__logo">
+        <img src="assets/logo.png" alt="logo" />
+      </div>
+      <ul class="footer__links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="daftar-harga.html">Daftar Harga</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="blog.html">Artikel</a></li>
+        <li><a href="about.html">Tentang Kami</a></li>
+      </ul>
+      <ul class="footer__socials">
+        <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
+        <li><a href="#"><i class="ri-twitter-fill"></i></a></li>
+        <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+        <li><a href="#"><i class="ri-linkedin-fill"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2025 Power Adventure. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    fetch('data-blog.json')
+      .then(res => res.json())
+      .then(posts => {
+        const grid = document.getElementById('blogGrid');
+        posts.reverse().forEach(post => {
+          const card = document.createElement('div');
+          card.className = 'blog__card';
+          card.innerHTML = `
+            <img src="${post.gambar}" alt="${post.judul}" />
+            <div class="blog__content">
+              <h4>${post.judul}</h4>
+              <p>${post.kategori}</p>
+              <a href="detail.html?slug=${post.slug}" class="btn">
+                Baca Selengkapnya <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          `;
+          grid.appendChild(card);
+        });
+      });
+  </script>
+      <!-- Tombol Jump to Top -->
+    <button class="jump-to-top" id="jumpToTop">
+      <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!-- Tombol Sticky WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=6281234567890&text=Halo,%20saya%20tertarik%20dengan%20paket%20Power%20Adventure!" class="whatsapp-sticky" target="_blank">
+      <i class="ri-whatsapp-line"></i>
+    </a>
+  <script src="main.js"></script>
+</body>
+</html>

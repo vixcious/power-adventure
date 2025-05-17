@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Artikel - Power Adventure</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" />
+    <style>
+      .blog__detail__container {
+        max-width: 800px;
+        margin: auto;
+        padding: 2rem 1rem;
+      }
+      .blog__detail__container h1 {
+        font-size: 2rem;
+        color: #1c2230;
+        margin-bottom: 0.25rem;
+      }
+      .blog__detail__container p.kategori {
+        color: #00b894;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+      }
+      .blog__detail__container img {
+        width: 100%;
+        border-radius: 10px;
+        margin: 1.5rem 0;
+      }
+      .blog__detail__container .konten {
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: #444;
+      }
+      .share__section {
+        margin-top: 2rem;
+        border-top: 1px solid #eee;
+        padding-top: 1.5rem;
+      }
+      .share__section h4 {
+        margin-bottom: 0.75rem;
+      }
+      .share__buttons a {
+        display: inline-block;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        color: #1c2230;
+        text-decoration: none;
+      }
+      .closing__cta {
+        margin-top: 3rem;
+        padding: 2rem;
+        background: #f1fdfb;
+        border-left: 5px solid #00b894;
+        border-radius: 10px;
+        text-align: center;
+      }
+      .closing__cta h3 {
+        margin-bottom: 1rem;
+        color: #1c2230;
+      }
+      .closing__cta p {
+        color: #555;
+        margin-bottom: 1.5rem;
+      }
+      .closing__cta a {
+        display: inline-block;
+        background: #00b894;
+        color: white;
+        text-decoration: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: 0.2s ease;
+      }
+      .closing__cta a:hover {
+        background: #019e7a;
+      }
+      .related__posts h3 {
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+      }
+      .related__grid {
+        display: grid;
+        gap: 1.25rem;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+      .related__grid a {
+        background: #f7f7f7;
+        padding: 1rem;
+        display: block;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #1c2230;
+        transition: 0.2s ease;
+      }
+      .related__grid a:hover {
+        background: #e9f7f4;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="index.html">
+            <img src="assets/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="daftar-harga.html">Daftar Harga</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="blog.html">Artikel</a></li>
+        <li><a href="about.html">Tentang Kami</a></li>
+      </ul>
+    </nav>
+
+    <section class="blog__detail__container">
+      <h1 id="judul">Judul Artikel</h1>
+      <p class="kategori" id="kategori">Kategori</p>
+      <img id="gambar" src="" alt="gambar artikel" />
+      <div class="konten" id="konten">Konten artikel sedang dimuat...</div>
+
+      <div class="share__section">
+        <h4>Bagikan Artikel Ini:</h4>
+        <div class="share__buttons">
+          <a id="share-fb" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+          <a id="share-wa" target="_blank"><i class="ri-whatsapp-fill"></i></a>
+          <a id="share-x" target="_blank"><i class="ri-twitter-x-line"></i></a>
+        </div>
+      </div>
+
+      <div class="closing__cta">
+        <h3>Tertarik Booking Kegiatan Seru Ini?</h3>
+        <p>Yuk langsung hubungi tim Power Adventure lewat WhatsApp dan kita atur waktu terbaik untuk kamu dan timmu!</p>
+        <a href="https://wa.me/6281234567890" target="_blank">Booking Sekarang</a>
+      </div>
+
+      <div class="related__posts" id="relatedPosts" style="display:none;">
+        <h3>Baca Artikel Lainnya</h3>
+        <div class="related__grid" id="relatedGrid"></div>
+      </div>
+    </section>
+
+    <footer class="footer__bar">
+      <div class="section__container footer__container">
+        <div class="footer__logo">
+          <img src="assets/logo.png" alt="logo" />
+        </div>
+        <ul class="footer__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="daftar-harga.html">Daftar Harga</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="blog.html">Artikel</a></li>
+        <li><a href="about.html">Tentang Kami</a></li>
+        </ul>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 Power Adventure. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const slug = params.get('slug');
+
+      fetch('data-blog.json')
+        .then(res => res.json())
+        .then(posts => {
+          const post = posts.find(p => p.slug === slug);
+          if (!post) return;
+
+          document.getElementById('judul').textContent = post.judul;
+          document.getElementById('kategori').textContent = post.kategori;
+          document.getElementById('gambar').src = post.gambar;
+          document.getElementById('gambar').alt = post.judul;
+          document.getElementById('konten').innerHTML = post.konten;
+
+          const shareUrl = encodeURIComponent(window.location.href);
+          const shareText = encodeURIComponent(post.judul);
+          document.getElementById('share-fb').href = `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`;
+          document.getElementById('share-wa').href = `https://wa.me/?text=${shareText}%20${shareUrl}`;
+          document.getElementById('share-x').href = `https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}`;
+
+          const related = posts.filter(p => p.slug !== slug).slice(0, 3);
+          if (related.length > 0) {
+            document.getElementById('relatedPosts').style.display = 'block';
+            const grid = document.getElementById('relatedGrid');
+            related.forEach(p => {
+              grid.innerHTML += `
+                <a href="detail.html?slug=${p.slug}">
+                  <strong>${p.judul}</strong><br>
+                  <small>${p.kategori}</small>
+                </a>`;
+            });
+          }
+        });
+    </script>
+        <!-- Tombol Jump to Top -->
+    <button class="jump-to-top" id="jumpToTop">
+      <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!-- Tombol Sticky WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=6281234567890&text=Halo,%20saya%20tertarik%20dengan%20paket%20Power%20Adventure!" class="whatsapp-sticky" target="_blank">
+      <i class="ri-whatsapp-line"></i>
+    </a>
+    <script src="main.js"></script>
+  </body>
+</html>
